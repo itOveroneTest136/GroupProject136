@@ -136,4 +136,7 @@ public class Program
 			e.printStackTrace();
 		}
 	}
+	public static void budnik(){
+		System.out.println("Будник Артём Валерьевич");
+	}
 }
