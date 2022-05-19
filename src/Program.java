@@ -92,4 +92,7 @@ public class Program
 	public static void samok (){
 		System.out.println("Samok Iryna");
 	}
+	public static void budnik(){
+		System.out.println("Будник Артём Валерьевич");
+	}
 }
