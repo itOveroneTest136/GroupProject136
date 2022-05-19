@@ -4,4 +4,7 @@ public class Program
 	{
 
 	}
+	public static void budnik(){
+		System.out.println("Будник Артём Валерьевич");
+	}
 }
