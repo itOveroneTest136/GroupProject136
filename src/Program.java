@@ -4,6 +4,7 @@ public class Program
 	{
 		kislushchanka();
 		turomsha();
+		busel();
 	}
 
 	public static void kislushchanka(){
@@ -15,5 +16,9 @@ public class Program
 	 */
 	public static void turomsha(){
 		System.out.println("Туромша Тимофей Павлович");
+
+	}
+	public static void busel(){
+		System.out.println("Денис Бусел");
 	}
 }
