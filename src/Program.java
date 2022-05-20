@@ -3,6 +3,7 @@ public class Program
 	public static void main(String[] args)
 	{
 		kislushchanka();
+		turomsha();
 	}
 
 	public static void kislushchanka(){
