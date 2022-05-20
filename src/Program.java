@@ -19,6 +19,6 @@ public class Program
 
 	}
 	public static void busel(){
-		System.out.println("Денис Бусел");
+		System.out.println("Денис Бусел!");
 	}
 }
