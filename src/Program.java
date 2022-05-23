@@ -98,7 +98,9 @@ public class Program
 		System.out.println("Будник Артём Валерьевич");
 	}
 
-	public static void samok (){
+	public static void samok(){
 		System.out.println("Samok Iryna");
+		System.out.println("Украина (2019) = " + Samok.UKRAINE.getPopulation2019());
+		System.out.println("Украина (2021) = " + Samok.UKRAINE.getPopulation2021());
 	}
 }
