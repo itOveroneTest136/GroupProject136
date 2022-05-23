@@ -9,6 +9,7 @@ public class Program
 		beliayeva();
 		matveev();
 		novik();
+		leuchyk();
 	}
 
 	public static void kislushchanka(){
@@ -37,6 +38,10 @@ public class Program
 
 	public static void beliayeva() {
 		System.out.println("Беляева Наталья Александровна");
+	}
+
+	public static void leuchyk(){
+		System.out.println("Левчик В С");
 	}
 	public static void Konstantinovich(){
 		System.out.println("Konstantinovich  Svetlana Lvovna");
