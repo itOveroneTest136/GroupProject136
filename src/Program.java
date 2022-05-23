@@ -22,6 +22,7 @@ public class Program
 		budnik();
 		samok();
 	}
+
 	public static void kislushchanka(){
 		System.out.println("Кислущенко Андрей Валерьевич");
 	}
@@ -45,11 +46,13 @@ public class Program
 			e.printStackTrace();
 		}
 	}
+
 	public static void novik(){
 		System.out.println("Новик Сергей");
 		System.out.println("Население Беларуси в 2019 = " + Busel.BELARUS.getPopulation2019());
 		System.out.println("Население Росии в 2021 = " + Busel.RUSSIA.getPopulation2021());
 	}
+
 	public static void matveev (){
 		System.out.println("Dmitriy enums.Matveev");
 		System.out.println("Население Беларуси в 2019 году = " + Matveev.BELARUS.getPopulation2019());
@@ -60,6 +63,7 @@ public class Program
 			e.printStackTrace();
 		}
 	}
+
 	public static void beliayeva() {
 		System.out.println("Беляева Наталья Александровна");
 		System.out.println("Беларусь 2019 = " + Beliayeva.BELARUS.getPopulation2019());
@@ -70,6 +74,7 @@ public class Program
 			e.printStackTrace();
 		}
 	}
+
 	public static void plyosov() {
 		System.out.println("Плёсов Дмитрий Александрович");
 		System.out.println("Беларусь (2019) население = " + plyosov.BELARUS.getPopulation2019());
@@ -100,7 +105,7 @@ public class Program
 		}
 	}
 
-	public static void budnik() {
+	public static void budnik(){
 		System.out.println("Будник Артём Валерьевич");
 		System.out.println("Беларусь (2019) Население" +budnik.BELARUS.getPopulation2019() );
 		System.out.println("Беларусь (2021)Население" +budnik.BELARUS.getPopulation2021());
