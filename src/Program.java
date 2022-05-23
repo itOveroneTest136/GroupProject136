@@ -2,10 +2,10 @@ public class Program
 {
 	public static void main(String[] args)
 	{
-
 		kislushchanka();
 		turomsha();
 		busel();
+		beliayeva();
 		matveev();
 	}
 
@@ -22,12 +22,13 @@ public class Program
 	}
 	public static void busel(){
 		System.out.println("Денис Бусел!");
-
-
 	}
 
 	public static void matveev (){
 		System.out.println("Dmitriy Matveev");
+	}
 
+	public static void beliayeva(){
+		System.out.println("Беляева Наталья Александровна");
 	}
 }
