@@ -44,6 +44,8 @@ public class Program
 
 	public static void plyosov() {
 		System.out.println("Плёсов Дмитрий Александрович");
+		System.out.println("Беларусь (2019) население = "+plyosov.BELARUS.getPopulation2019());
+		System.out.println("Беларусь (2021) население = "+plyosov.BELARUS.getPopulation2021());
 	}
 
 	public static void leuchyk(){
