@@ -9,6 +9,7 @@ public class Program
 		beliayeva();
 		matveev();
 		novik();
+		leuchyk();
 	}
 
 	public static void kislushchanka(){
