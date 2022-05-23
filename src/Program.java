@@ -11,7 +11,7 @@ public class Program
 		novik();
 		leuchyk();
 		plyosov();
-
+		budnik();
 	}
 
 	public static void kislushchanka(){
@@ -51,5 +51,8 @@ public class Program
 	}
 	public static void Konstantinovich(){
 		System.out.println("Konstantinovich  Svetlana Lvovna");
+	}
+	public static void budnik(){
+		System.out.println("Будник Артём Валерьевич");
 	}
 }
