@@ -11,6 +11,7 @@ public class Program
 		novik();
 		leuchyk();
 		plyosov();
+
 	}
 
 	public static void kislushchanka(){
