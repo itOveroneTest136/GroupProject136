@@ -41,7 +41,11 @@ public class Program
 	}
 
 	public static void leuchyk(){
+		System.out.println();
 		System.out.println("Левчик В С");
+		System.out.println("Население бразилии в 2019 году: " + Leuchyk.BRITISH.getPopulation2019());
+		System.out.println("Население бразилии в 2021 году: " + Leuchyk.BRITISH.getPopulation2021());
+
 	}
 	public static void Konstantinovich(){
 		System.out.println("Konstantinovich  Svetlana Lvovna");
