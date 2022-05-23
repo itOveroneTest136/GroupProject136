@@ -20,7 +20,6 @@ public class Program
 		plyosov();
 		budnik();
 		samok();
-
 	}
 
 	public static void kislushchanka(){
@@ -97,6 +96,8 @@ public class Program
 
 	public static void budnik() {
 		System.out.println("Будник Артём Валерьевич");
+		System.out.println("Беларусь (2019) Население" +budnik.BELARUS.getPopulation2019() );
+		System.out.println("Беларусь (2021)Население" +budnik.BELARUS.getPopulation2021());
 	}
 
 	public static void samok(){
