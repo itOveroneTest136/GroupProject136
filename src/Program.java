@@ -93,6 +93,8 @@ public class Program
 
 	public static void Konstantinovich() {
 		System.out.println("Konstantinovich  Svetlana Lvovna");
+		System.out.println("Belarus (2019)="+Konstantinovi.BELARUS.getPopulatoin2019());
+		System.out.println("Belarus (2021)="+Konstantinovi.BELARUS.getPopulatoin2021());
 	}
 
 	public static void budnik() {
