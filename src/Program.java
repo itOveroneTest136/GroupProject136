@@ -29,6 +29,9 @@ public class Program
 	}
 	public static void busel(){
 		System.out.println("Денис Бусел!");
+		System.out.println("Население Беларуси в 2019 = " + Busel.BELARUS.getPopulation2019());
+		System.out.println("Население Росии в 2021 = " + Busel.RUSSIA.getPopulation2021());
+
 	}
 
 
