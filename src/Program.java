@@ -25,7 +25,8 @@ public class Program
 	 */
 	public static void turomsha(){
 		System.out.println("Туромша Тимофей Павлович");
-
+		System.out.println("Уругвай, 2019" + Turomsha.URUGUY.getPopulation2019()); ;
+		System.out.println("Польша, 2020" +Turomsha.POLAND.getPopulation2020()); ;
 	}
 	public static void busel(){
 		System.out.println("Денис Бусел!");
