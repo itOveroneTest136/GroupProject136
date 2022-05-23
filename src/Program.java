@@ -8,6 +8,7 @@ public class Program
 		busel();
 		beliayeva();
 		matveev();
+		novik();
 	}
 
 	public static void kislushchanka(){
@@ -23,6 +24,11 @@ public class Program
 	}
 	public static void busel(){
 		System.out.println("Денис Бусел!");
+	}
+
+
+	public static void novik(){
+		System.out.println("Новик Сергей");
 	}
 
 	public static void matveev (){
