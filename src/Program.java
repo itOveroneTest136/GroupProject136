@@ -40,6 +40,8 @@ public class Program
 
 	public static void beliayeva() {
 		System.out.println("Беляева Наталья Александровна");
+		System.out.println("Беларусь 2019 = " + Beliayeva.BELARUS.getPopulation2019());
+		System.out.println("Беларусь 2021 = " + Beliayeva.BELARUS.getPopulation2021());
 	}
 
 	public static void plyosov() {
