@@ -6,6 +6,8 @@ import exceptions.PlyosovException;
 import exceptions.SamokException;
 import exceptions.BudnikExceptions;
 import exceptions.KonstantsinovichException;
+import exceptions.TuromshaException;
+
 public class Program
 {
 	public static void main(String[] args)
@@ -29,11 +31,18 @@ public class Program
 
 	/**
 	 * This method shows my full name
+	 * @author Туромша Тимофей
 	 */
 	public static void turomsha(){
-		System.out.println("Туромша Тимофей Павлович");
-		System.out.println("Уругвай, 2019" + Turomsha.URUGUY.getPopulation2019()); ;
-		System.out.println("Польша, 2020" +Turomsha.POLAND.getPopulation2020()); ;
+		System.out.println("\nТуромша Тимофей Павлович");
+		System.out.println("Уругвай, 2019 - " + Turomsha.URUGUY.getPopulation2019() + " чел.");
+		System.out.println("Польша, 2020 - " +Turomsha.POLAND.getPopulation2020()+ " чел.");
+		try {
+			throw new TuromshaException("АШИБКО");
+		} catch (TuromshaException e) {
+			System.out.println(e.getDetails());
+			System.out.println(e.getMessage()+"\n");
+		}
 	}
 
 	public static void busel(){
