@@ -1,4 +1,5 @@
 import enums.*;
+import exceptions.ArxipovException;
 
 
 public class Program
@@ -16,6 +17,7 @@ public class Program
 		plyosov();
 		budnik();
 		samok();
+		arxipov();
 
 	}
 
@@ -67,6 +69,13 @@ public class Program
 		System.out.println("Население бразилии в 2019 году: " + Leuchyk.BRITISH.getPopulation2019());
 		System.out.println("Население бразилии в 2021 году: " + Leuchyk.BRITISH.getPopulation2021());
 
+	}
+	public static void arxipov(){
+		try {
+			throw new ArxipovException("сломалось");
+		} catch (ArxipovException e) {
+			e.printStackTrace();
+		}
 	}
 	public static void Konstantinovich(){
 		System.out.println("Konstantinovich  Svetlana Lvovna");
