@@ -4,3 +4,4 @@ public class KislushchankaException extends Exception
 {
 
 }
+

@@ -3,6 +3,7 @@ import exceptions.MatveevException;
 import exceptions.BeliayevaException;
 import exceptions.PlyosovException;
 import exceptions.SamokException;
+import exceptions.BudnikExceptions;
 
 
 public class Program
@@ -50,7 +51,7 @@ public class Program
 	}
 
 	public static void matveev (){
-		System.out.println("Dmitriy Matveev");
+		System.out.println("Dmitriy enums.Matveev");
 		System.out.println("Население Беларуси в 2019 году = " + Matveev.BELARUS.getPopulation2019());
 		System.out.println("Население Беларуси в 2021 году = " + Matveev.BELARUS.getPopulation2021());
 		try {
@@ -98,6 +99,11 @@ public class Program
 		System.out.println("Будник Артём Валерьевич");
 		System.out.println("Беларусь (2019) Население" +budnik.BELARUS.getPopulation2019() );
 		System.out.println("Беларусь (2021)Население" +budnik.BELARUS.getPopulation2021());
+		try {
+			throw new BudnikExceptions("попортил");
+		} catch (BudnikExceptions e) {
+			e.printStackTrace();
+		}
 	}
 
 	public static void samok(){
