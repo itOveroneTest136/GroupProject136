@@ -1,4 +1,5 @@
 import enums.*;
+import exceptions.BuselException;
 import exceptions.MatveevException;
 import exceptions.BeliayevaException;
 import exceptions.PlyosovException;
@@ -38,6 +39,11 @@ public class Program
 		System.out.println("Денис Бусел!");
 		System.out.println("Население Беларуси в 2019 = " + Busel.BELARUS.getPopulation2019());
 		System.out.println("Население Росии в 2021 = " + Busel.RUSSIA.getPopulation2021());
+		try {
+			throw new BuselException("Ситуация...");
+		} catch (BuselException e) {
+			e.printStackTrace();
+		}
 	}
 	public static void novik(){
 		System.out.println("Новик Сергей");
