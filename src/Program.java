@@ -4,6 +4,7 @@ import exceptions.BeliayevaException;
 import exceptions.PlyosovException;
 import exceptions.SamokException;
 import exceptions.BudnikExceptions;
+import exceptions.KonstantsinovichException;
 
 
 public class Program
@@ -95,6 +96,11 @@ public class Program
 		System.out.println("Konstantinovich  Svetlana Lvovna");
 		System.out.println("Belarus (2019)="+Konstantinovi.BELARUS.getPopulatoin2019());
 		System.out.println("Belarus (2021)="+Konstantinovi.BELARUS.getPopulatoin2021());
+		try {
+			throw new KonstantsinovichException(" сломал");
+		} catch (KonstantsinovichException e) {
+			e.printStackTrace();
+		}
 	}
 
 	public static void budnik() {
