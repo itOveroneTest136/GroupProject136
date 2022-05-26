@@ -1,6 +1,7 @@
 import enums.*;
 import exceptions.MatveevException;
 import exceptions.BeliayevaException;
+import exceptions.PlyosovException;
 import exceptions.BuselException;
 import exceptions.MatveevException;
 import exceptions.BeliayevaException;
@@ -115,10 +116,10 @@ public class Program
 		}
 	}
 
-	public static void budnik(){
+	public static void budnik() {
 		System.out.println("Будник Артём Валерьевич");
-		System.out.println("Беларусь (2019) Население" +budnik.BELARUS.getPopulation2019() );
-		System.out.println("Беларусь (2021)Население" +budnik.BELARUS.getPopulation2021());
+		System.out.println("Беларусь (2019) Население" + budnik.BELARUS.getPopulation2019());
+		System.out.println("Беларусь (2021)Население" + budnik.BELARUS.getPopulation2021());
 		try {
 			throw new BudnikExceptions("попортил");
 		} catch (BudnikExceptions e) {
@@ -135,8 +136,5 @@ public class Program
 		} catch (SamokException e) {
 			e.printStackTrace();
 		}
-	}
-	public static void budnik(){
-		System.out.println("Будник Артём Валерьевич");
 	}
 }
