@@ -1,3 +1,5 @@
+package enums;
+
 public enum Busel {
 
     BELARUS(9_413_446,9_349_645),

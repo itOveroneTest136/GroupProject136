@@ -1,3 +1,5 @@
+package enums;
+
 public enum Turomsha {
     UKRAINE(44_130_000,44_390_000),
     POLAND(37_950_000,37_970_000),
