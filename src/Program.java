@@ -36,12 +36,11 @@ public class Program
 	public static void turomsha(){
 		System.out.println("\nТуромша Тимофей Павлович");
 		System.out.println("Уругвай, 2019 - " + Turomsha.URUGUY.getPopulation2019() + " чел.");
-		System.out.println("Польша, 2020 - " +Turomsha.POLAND.getPopulation2020()+ " чел.");
+		System.out.println("Польша, 2020 - " + Turomsha.POLAND.getPopulation2020()+ " чел.");
 		try {
 			throw new TuromshaException("АШИБКО");
 		} catch (TuromshaException e) {
-			System.out.println(e.getDetails());
-			System.out.println(e.getMessage()+"\n");
+			System.out.println(e.getDetails()+ "\n");
 		}
 	}
 
