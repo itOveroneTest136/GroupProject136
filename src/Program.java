@@ -11,6 +11,8 @@ import exceptions.SamokException;
 import exceptions.BudnikExceptions;
 import exceptions.KonstantsinovichException;
 import exceptions.TuromshaException;
+import exceptions.LeuchykException;
+
 
 public class Program
 {
@@ -101,8 +103,16 @@ public class Program
 	public static void leuchyk(){
 		System.out.println();
 		System.out.println("Левчик В С");
-		System.out.println("Население бразилии в 2019 году: " + Leuchyk.BRITISH.getPopulation2019());
-		System.out.println("Население бразилии в 2021 году: " + Leuchyk.BRITISH.getPopulation2021());
+		System.out.println("Население Испании в 2019 году: " + Leuchyk.SPANISH.getPopulation2019());
+		System.out.println("Население Испании в 2021 году: " + Leuchyk.SPANISH.getPopulation2021());
+		try
+		{
+			throw new LeuchykException("kick");
+		}
+		catch (LeuchykException e)
+		{
+			throw new RuntimeException(e);
+		}
 
 	}
 
