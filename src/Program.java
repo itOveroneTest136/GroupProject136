@@ -1,6 +1,7 @@
 import enums.*;
 import exceptions.MatveevException;
 import exceptions.BeliayevaException;
+import exceptions.PlyosovException;
 
 
 public class Program
@@ -33,6 +34,7 @@ public class Program
 		System.out.println("Уругвай, 2019" + Turomsha.URUGUY.getPopulation2019()); ;
 		System.out.println("Польша, 2020" +Turomsha.POLAND.getPopulation2020()); ;
 	}
+
 	public static void busel(){
 		System.out.println("Денис Бусел!");
 		System.out.println("Население Беларуси в 2019 = " + Busel.BELARUS.getPopulation2019());
@@ -82,17 +84,16 @@ public class Program
 		System.out.println("Население бразилии в 2021 году: " + Leuchyk.BRITISH.getPopulation2021());
 
 	}
-	public static void Konstantinovich(){
+
+	public static void Konstantinovich() {
 		System.out.println("Konstantinovich  Svetlana Lvovna");
 	}
-	public static void budnik(){
+
+	public static void budnik() {
 		System.out.println("Будник Артём Валерьевич");
 	}
 
 	public static void samok (){
 		System.out.println("Samok Iryna");
-	}
-	public static void budnik(){
-		System.out.println("Будник Артём Валерьевич");
 	}
 }
