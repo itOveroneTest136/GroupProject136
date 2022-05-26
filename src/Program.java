@@ -1,4 +1,6 @@
 import enums.*;
+import exceptions.MatveevException;
+import exceptions.BeliayevaException;
 import exceptions.BuselException;
 import exceptions.MatveevException;
 import exceptions.BeliayevaException;
@@ -62,7 +64,7 @@ public class Program
 	}
 
 	public static void matveev (){
-		System.out.println("Dmitriy enums.Matveev");
+		System.out.println("Dmitriy Matveev");
 		System.out.println("Население Беларуси в 2019 году = " + Matveev.BELARUS.getPopulation2019());
 		System.out.println("Население Беларуси в 2021 году = " + Matveev.BELARUS.getPopulation2021());
 		try {
