@@ -42,6 +42,8 @@ public class Program
 
 	public static void matveev (){
 		System.out.println("Dmitriy Matveev");
+		System.out.println("Население Беларуси в 2019 году = " + Matveev.BELARUS.getPopulation2019());
+		System.out.println("Население Беларуси в 2021 году = " + Matveev.BELARUS.getPopulation2021());
 	}
 
 	public static void beliayeva() {
