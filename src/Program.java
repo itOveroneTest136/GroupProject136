@@ -41,6 +41,8 @@ public class Program
 
 	public static void novik(){
 		System.out.println("Новик Сергей");
+		System.out.println("Население Беларуси в 2019 = " + Busel.BELARUS.getPopulation2019());
+		System.out.println("Население Росии в 2021 = " + Busel.RUSSIA.getPopulation2021());
 	}
 
 	public static void matveev (){
