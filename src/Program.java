@@ -1,4 +1,5 @@
 import enums.*;
+import exceptions.BeliayevaException;
 
 
 public class Program
@@ -55,6 +56,11 @@ public class Program
 		System.out.println("Беляева Наталья Александровна");
 		System.out.println("Беларусь 2019 = " + Beliayeva.BELARUS.getPopulation2019());
 		System.out.println("Беларусь 2021 = " + Beliayeva.BELARUS.getPopulation2021());
+		try {
+			throw new BeliayevaException("поломка программы");
+		} catch (BeliayevaException e) {
+			e.printStackTrace();
+		}
 	}
 
 	public static void plyosov() {
