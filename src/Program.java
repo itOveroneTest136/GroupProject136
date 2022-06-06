@@ -11,6 +11,7 @@ import exceptions.SamokException;
 import exceptions.BudnikExceptions;
 import exceptions.KonstantsinovichException;
 import exceptions.TuromshaException;
+import generic.Plyosov;
 
 public class Program
 {
@@ -96,6 +97,10 @@ public class Program
 		} catch (PlyosovException e) {
 			e.printStackTrace();
 		}
+		Plyosov <Integer,String> test = new Plyosov<>(675,"Booom");
+		Plyosov <Integer,Integer> test2 = new Plyosov<>(566,677);
+
+
 	}
 
 	public static void leuchyk(){
