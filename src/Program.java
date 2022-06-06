@@ -74,6 +74,8 @@ public class Program
 		} catch (MatveevException e) {
 			e.printStackTrace();
 		}
+		generic.Matveev <Integer, String> obj = new generic.Matveev<>(123, "123");
+		generic.Matveev <Integer, Integer> obj2 = new generic.Matveev<>(1234, 123);
 	}
 
 	public static void beliayeva() {
