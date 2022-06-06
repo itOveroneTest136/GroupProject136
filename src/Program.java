@@ -11,6 +11,7 @@ import exceptions.SamokException;
 import exceptions.BudnikExceptions;
 import exceptions.KonstantsinovichException;
 import exceptions.TuromshaException;
+import generic.Novik;
 import generic.LevchGineric;
 import generic.BudnikGeneric;
 import generic.Plyosov;
@@ -77,6 +78,9 @@ public class Program
 		System.out.println("Новик Сергей");
 		System.out.println("Население Беларуси в 2019 = " + Busel.BELARUS.getPopulation2019());
 		System.out.println("Население Росии в 2021 = " + Busel.RUSSIA.getPopulation2021());
+		Novik <Integer,String> test = new Novik<>(123,"test");
+		Novik <Double,Integer> test2 = new Novik<>(12.1,321);
+
 	}
 
 	public static void matveev (){
