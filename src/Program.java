@@ -11,6 +11,7 @@ import exceptions.SamokException;
 import exceptions.BudnikExceptions;
 import exceptions.KonstantsinovichException;
 import exceptions.TuromshaException;
+import generic.Konstantinovich;
 
 public class Program
 {
@@ -108,6 +109,11 @@ public class Program
 
 	public static void Konstantinovich() {
 		System.out.println("Konstantinovich  Svetlana Lvovna");
+		Konstantinovich<Integer,String> test=new Konstantinovich<>(123,"te");
+		Konstantinovich<Double,Integer> test2=new Konstantinovich<>(555.00,123);
+		test.setValue(123);
+		test.setValue2("La");
+
 		System.out.println("Belarus (2019)="+Konstantinovi.BELARUS.getPopulatoin2019());
 		System.out.println("Belarus (2021)="+Konstantinovi.BELARUS.getPopulatoin2021());
 		try {
@@ -115,6 +121,7 @@ public class Program
 		} catch (KonstantsinovichException e) {
 			e.printStackTrace();
 		}
+
 	}
 
 	public static void budnik() {
