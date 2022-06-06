@@ -16,22 +16,21 @@ import generic.LevchGineric;
 import generic.BudnikGeneric;
 import generic.Plyosov;
 
-public class Program
-{
-	public static void main(String[] args)
-	{
-		Konstantinovich();
-		kislushchanka();
-		turomsha();
-		busel();
-		beliayeva();
-		matveev();
-		novik();
-		leuchyk();
-		plyosov();
-		budnik();
-		samok();
-	}
+public class Program {
+    public static void main(String[] args) {
+        Konstantinovich();
+        kislushchanka();
+        turomsha();
+        busel();
+        beliayeva();
+        matveev();
+        novik();
+        leuchyk();
+        plyosov();
+        budnik();
+        samok();
+        Poliakou();
+    }
 
 	public static void kislushchanka(){
 		System.out.println("Кислущенко Андрей Валерьевич");
@@ -156,6 +155,13 @@ public class Program
 		BudnikGeneric<Integer, String> test = new BudnikGeneric<>(123,"test");
 		BudnikGeneric<Integer, Integer> test2 = new BudnikGeneric<>(123,123);
 	}
+
+    public static void Poliakou() {
+        System.out.println("Поляков Сергей Владимирович");
+        System.out.println("Население Беларуси в 2020г : " + Poliakou.BELARUS.getPopulation2021());
+        System.out.println("Население России в 2020г : " + Poliakou.RUSSIA.getPopulation2021());
+        System.out.println("Население Украины в 2020г : " + Poliakou.UKRAINE.getPopulation2021());
+    }
 
 	public static void samok(){
 		System.out.println("Samok Iryna");
