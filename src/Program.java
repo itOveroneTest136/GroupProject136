@@ -12,8 +12,10 @@ import exceptions.BudnikExceptions;
 import exceptions.KonstantsinovichException;
 import exceptions.TuromshaException;
 import generic.Beliayeva;
-
-
+import generic.Novik;
+import generic.LevchGineric;
+import generic.BudnikGeneric;
+import generic.Plyosov;
 
 public class Program
 {
@@ -49,6 +51,13 @@ public class Program
 		} catch (TuromshaException e) {
 			System.out.println(e.getDetails()+ "\n");
 		}
+		generic.Turomsha<Integer,String> test = new generic.Turomsha<>(42,"CTPOKA");
+		generic.Turomsha<Double,Integer> test2 = new generic.Turomsha<>(55D,24);
+		test.getValue2();
+		test2.getValue2();
+
+
+
 	}
 
 	public static void busel(){
@@ -60,12 +69,19 @@ public class Program
 		} catch (BuselException e) {
 			e.printStackTrace();
 		}
+		generic.Busel<Integer,String> test = new generic.Busel<>(1,"five");
+		generic.Busel<Double,Integer> test2 = new generic.Busel<>(7.0,17);
+		test.setValue2("Строка");
+		test2.setValue2(12323);
 	}
 
 	public static void novik(){
 		System.out.println("Новик Сергей");
 		System.out.println("Население Беларуси в 2019 = " + Busel.BELARUS.getPopulation2019());
 		System.out.println("Население Росии в 2021 = " + Busel.RUSSIA.getPopulation2021());
+		Novik <Integer,String> test = new Novik<>(123,"test");
+		Novik <Double,Integer> test2 = new Novik<>(12.1,321);
+
 	}
 
 	public static void matveev (){
@@ -77,6 +93,8 @@ public class Program
 		} catch (MatveevException e) {
 			e.printStackTrace();
 		}
+		generic.Matveev <Integer, String> obj = new generic.Matveev<>(123, "123");
+		generic.Matveev <Integer, Integer> obj2 = new generic.Matveev<>(1234, 123);
 	}
 
 	public static void beliayeva() {
@@ -103,6 +121,10 @@ public class Program
 		} catch (PlyosovException e) {
 			e.printStackTrace();
 		}
+		Plyosov <Integer,String> test = new Plyosov<>(675,"Booom");
+		Plyosov <Integer,Integer> test2 = new Plyosov<>(566,677);
+
+
 	}
 
 	public static void leuchyk(){
@@ -110,6 +132,9 @@ public class Program
 		System.out.println("Левчик В С");
 		System.out.println("Население бразилии в 2019 году: " + Leuchyk.BRITISH.getPopulation2019());
 		System.out.println("Население бразилии в 2021 году: " + Leuchyk.BRITISH.getPopulation2021());
+		System.out.println();
+		LevchGineric <Integer, String> levchGineric = new LevchGineric<>(33, "33");
+		LevchGineric <Double, String> levchGineric2 = new LevchGineric<>(33.3, "33.3");
 
 	}
 
@@ -133,6 +158,8 @@ public class Program
 		} catch (BudnikExceptions e) {
 			e.printStackTrace();
 		}
+		BudnikGeneric<Integer, String> test = new BudnikGeneric<>(123,"test");
+		BudnikGeneric<Integer, Integer> test2 = new BudnikGeneric<>(123,123);
 	}
 
 	public static void samok(){
