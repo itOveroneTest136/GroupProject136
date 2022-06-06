@@ -12,22 +12,21 @@ import exceptions.BudnikExceptions;
 import exceptions.KonstantsinovichException;
 import exceptions.TuromshaException;
 
-public class Program
-{
-	public static void main(String[] args)
-	{
-		Konstantinovich();
-		kislushchanka();
-		turomsha();
-		busel();
-		beliayeva();
-		matveev();
-		novik();
-		leuchyk();
-		plyosov();
-		budnik();
-		samok();
-	}
+public class Program {
+    public static void main(String[] args) {
+        Konstantinovich();
+        kislushchanka();
+        turomsha();
+        busel();
+        beliayeva();
+        matveev();
+        novik();
+        leuchyk();
+        plyosov();
+        budnik();
+        samok();
+        Poliakou();
+    }
 
 	public static void kislushchanka(){
 		System.out.println("Кислущенко Андрей Валерьевич");
@@ -127,6 +126,13 @@ public class Program
 			e.printStackTrace();
 		}
 	}
+
+    public static void Poliakou() {
+        System.out.println("Поляков Сергей Владимирович");
+        System.out.println("Население Беларуси в 2020г : " + Poliakou.BELARUS.getPopulation2021());
+        System.out.println("Население России в 2020г : " + Poliakou.RUSSIA.getPopulation2021());
+        System.out.println("Население Украины в 2020г : " + Poliakou.UKRAINE.getPopulation2021());
+    }
 
 	public static void samok(){
 		System.out.println("Samok Iryna");
