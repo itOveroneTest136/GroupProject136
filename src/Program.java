@@ -1,15 +1,8 @@
 import enums.*;
-import exceptions.TuromshaException;
+import exceptions.*;
 import exceptions.MatveevException;
 import exceptions.BeliayevaException;
 import exceptions.PlyosovException;
-import exceptions.BuselException;
-import exceptions.MatveevException;
-import exceptions.BeliayevaException;
-import exceptions.PlyosovException;
-import exceptions.SamokException;
-import exceptions.BudnikExceptions;
-import exceptions.KonstantsinovichException;
 import exceptions.TuromshaException;
 import generic.Plyosov;
 
@@ -64,6 +57,11 @@ public class Program
 		System.out.println("Новик Сергей");
 		System.out.println("Население Беларуси в 2019 = " + Busel.BELARUS.getPopulation2019());
 		System.out.println("Население Росии в 2021 = " + Busel.RUSSIA.getPopulation2021());
+		try {
+			throw new NovikException(".....Proba.....");
+		}catch (NovikException e){
+			e.printStackTrace();
+		}
 	}
 
 	public static void matveev (){
