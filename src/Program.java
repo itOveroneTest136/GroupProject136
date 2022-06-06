@@ -47,6 +47,13 @@ public class Program
 		} catch (TuromshaException e) {
 			System.out.println(e.getDetails()+ "\n");
 		}
+		generic.Turomsha<Integer,String> test = new generic.Turomsha<>(42,"CTPOKA");
+		generic.Turomsha<Double,Integer> test2 = new generic.Turomsha<>(55D,24);
+		test.getValue2();
+		test2.getValue2();
+
+
+
 	}
 
 	public static void busel(){
