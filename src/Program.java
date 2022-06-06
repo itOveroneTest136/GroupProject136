@@ -65,6 +65,10 @@ public class Program
 		} catch (BuselException e) {
 			e.printStackTrace();
 		}
+		generic.Busel<Integer,String> test = new generic.Busel<>(1,"five");
+		generic.Busel<Double,Integer> test2 = new generic.Busel<>(7.0,17);
+		test.setValue2("Строка");
+		test2.setValue2(12323);
 	}
 
 	public static void novik(){
