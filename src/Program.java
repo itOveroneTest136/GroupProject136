@@ -11,6 +11,7 @@ import exceptions.SamokException;
 import exceptions.BudnikExceptions;
 import exceptions.KonstantsinovichException;
 import exceptions.TuromshaException;
+import generic.Beliayeva;
 import generic.Novik;
 import generic.LevchGineric;
 import generic.BudnikGeneric;
@@ -98,8 +99,12 @@ public class Program
 
 	public static void beliayeva() {
 		System.out.println("Беляева Наталья Александровна");
-		System.out.println("Беларусь 2019 = " + Beliayeva.BELARUS.getPopulation2019());
-		System.out.println("Беларусь 2021 = " + Beliayeva.BELARUS.getPopulation2021());
+		Beliayeva<Integer, String> test = new Beliayeva<>(4, "test");
+		Beliayeva<Double, Integer> test2 = new Beliayeva<>(4.0, 3);
+		test.setValue2("124");
+		test2.setValue2(123);
+		System.out.println("Беларусь 2019 = " + enums.Beliayeva.BELARUS.getPopulation2019());
+		System.out.println("Беларусь 2021 = " + enums.Beliayeva.BELARUS.getPopulation2021());
 		try {
 			throw new BeliayevaException("поломка программы");
 		} catch (BeliayevaException e) {
