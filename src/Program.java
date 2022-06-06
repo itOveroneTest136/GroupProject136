@@ -11,6 +11,7 @@ import exceptions.SamokException;
 import exceptions.BudnikExceptions;
 import exceptions.KonstantsinovichException;
 import exceptions.TuromshaException;
+import generic.BudnikGeneric;
 import generic.Plyosov;
 
 public class Program
@@ -142,6 +143,8 @@ public class Program
 		} catch (BudnikExceptions e) {
 			e.printStackTrace();
 		}
+		BudnikGeneric<Integer, String> test = new BudnikGeneric<>(123,"test");
+		BudnikGeneric<Integer, Integer> test2 = new BudnikGeneric<>(123,123);
 	}
 
 	public static void samok(){
