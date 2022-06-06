@@ -11,6 +11,7 @@ import exceptions.SamokException;
 import exceptions.BudnikExceptions;
 import exceptions.KonstantsinovichException;
 import exceptions.TuromshaException;
+import generic.LevchGineric;
 import generic.BudnikGeneric;
 import generic.Plyosov;
 
@@ -122,6 +123,9 @@ public class Program
 		System.out.println("Левчик В С");
 		System.out.println("Население бразилии в 2019 году: " + Leuchyk.BRITISH.getPopulation2019());
 		System.out.println("Население бразилии в 2021 году: " + Leuchyk.BRITISH.getPopulation2021());
+		System.out.println();
+		LevchGineric <Integer, String> levchGineric = new LevchGineric<>(33, "33");
+		LevchGineric <Double, String> levchGineric2 = new LevchGineric<>(33.3, "33.3");
 
 	}
 
