@@ -1,4 +1,12 @@
+import BuselGeneric.Cofee;
+import BuselGeneric.CupBusel;
+import BuselGeneric.Juice;
+import BuselGeneric.Tea;
 import enums.*;
+import enums.Beliayeva;
+import enums.Busel;
+import enums.Matveev;
+import enums.Turomsha;
 import exceptions.TuromshaException;
 import exceptions.MatveevException;
 import exceptions.BeliayevaException;
@@ -11,11 +19,9 @@ import exceptions.SamokException;
 import exceptions.BudnikExceptions;
 import exceptions.KonstantsinovichException;
 import exceptions.TuromshaException;
+import generic.*;
 import generic.Beliayeva;
 import generic.Novik;
-import generic.LevchGineric;
-import generic.BudnikGeneric;
-import generic.Plyosov;
 
 public class Program
 {
@@ -73,6 +79,16 @@ public class Program
 		generic.Busel<Double,Integer> test2 = new generic.Busel<>(7.0,17);
 		test.setValue2("Строка");
 		test2.setValue2(12323);
+		Tea tea = new Tea("Ulun");
+		Cofee cofee = new Cofee("Regular");
+		Juice juice = new Juice("Orange");
+		CupBusel<Tea> cup1 = new CupBusel<>(tea);
+		CupBusel<Cofee> cup2 = new CupBusel<>(cofee);
+		CupBusel<Juice> cup3 = new CupBusel<>(juice);
+		System.out.println(cup1.getCup());
+		System.out.println(cup2.getCup());
+		System.out.println(cup3.getCup());
+		System.out.println();
 	}
 
 	public static void novik(){
