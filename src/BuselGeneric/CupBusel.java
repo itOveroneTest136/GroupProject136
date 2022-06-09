@@ -1,6 +1,6 @@
 package BuselGeneric;
 
-public class CupBusel<T> {
+public class CupBusel<T> implements Liquid {
 
     private T cup;
 
@@ -14,5 +14,10 @@ public class CupBusel<T> {
 
     public void setCup(T cup) {
         this.cup = cup;
+    }
+
+    @Override
+    public void pour() {
+
     }
 }
